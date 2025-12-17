@@ -41,4 +41,43 @@ Key operators:
 
 & → gets the address of a variable
 
-* → declares a pointer OR accesses the value stored at the pointer
+while *  declares a pointer OR accesses the value stored at the pointer
+
+### 3. Dereferencing a Pointer
+
+Dereferencing a pointer means accessing or modifying the value stored at the memory address held by the pointer.
+
+Reading a value:
+```c
+int x = 15;
+int *p = &x;
+
+printf("Value of x through pointer: %d\n", *p);
+```
+Modifying a value:
+```c
+int x = 15;
+int *p = &x;
+
+*p = 40;     // Changes x to 40
+printf("New value of x: %d\n", x);
+```
+
+### Memory Access Example
+```c
+int a = 7;
+int *ptr = &a;
+
+printf("Address of a: %p\n", ptr);
+printf("Value of a via pointer: %d\n", *ptr);
+```
+### Conclusion
+Pointers allow indirect access to memory, enabling:
+
+Efficient data manipulation
+
+Dynamic memory use
+
+Passing values by reference to functions
+
+
