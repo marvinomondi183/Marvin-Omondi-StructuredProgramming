@@ -13,7 +13,7 @@ Pointer: accessed indirectly using dereferencing (*)
 
 Example:
 
-'''c
+```c
 int x = 10;       // Normal variable stores value
 int *p = &x;      // Pointer stores address of x
 
