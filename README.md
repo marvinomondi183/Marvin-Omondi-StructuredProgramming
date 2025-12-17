@@ -25,3 +25,8 @@ int *p = &x;    // pointer
 
 x = 20;         // direct modification
 *p = 30;        // modification through pointer
+
+```c
+int x = 10;
+int *p = &x;
+printf("%d", *p);
